@@ -1,0 +1,39 @@
+@Metadata.layer: #CUSTOMER
+annotate entity zc_13065_um_subit with
+{
+  @UI.facet: [
+      {
+        id: 'subitem',
+        label: 'Sub Item Info',
+        type: #IDENTIFICATION_REFERENCE,
+        position: 10,
+        purpose: #STANDARD
+      }
+  ]
+
+  @UI.lineItem: [{ position: 10,label: 'Id' }]
+  @UI.identification: [{ position: 10,label: 'Id' }]
+  @EndUserText.label: 'Id'
+  Id;
+
+  @UI.lineItem: [{ position: 20,label: 'Item no' }]
+  @UI.identification: [{ position: 20,label: 'Item no' }]
+  @EndUserText.label: 'Item No'
+  Itemno;
+
+  @UI.lineItem: [{ position: 30,label: 'Sub item no' }]
+  @UI.identification: [{ position: 30,label: 'Sub item no' }]
+  @EndUserText.label: 'Sub Item No'
+  Subitemno;
+
+  @UI.lineItem: [{ position: 40,label: 'Create date' }]
+  @UI.identification: [{ position: 40,label: 'Create date' }]
+  @EndUserText.label: 'Create Date'
+  Cdate;
+
+  @UI.lineItem: [{ position: 50,label: 'Note' }]
+  @UI.identification: [{ position: 50,label: 'Note' }]
+  @EndUserText.label: 'Note'
+  Note;
+
+}

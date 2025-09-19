@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service definition for unmanaged'
+@ObjectModel.leadingEntity.name: 'zc_13065_um_head'
+define service zsrvd_13065_um {
+  expose zc_13065_um_head  as head;
+  expose zc_13065_um_item  as item;
+  expose zc_13065_um_subit as subitem;
+}

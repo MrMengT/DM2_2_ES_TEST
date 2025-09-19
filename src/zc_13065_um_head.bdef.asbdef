@@ -1,0 +1,38 @@
+projection;
+strict ( 2 );
+use draft;
+
+define behavior for zc_13065_um_head alias head
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+  use action test;
+
+  use association _item { create; with draft; }
+}
+
+define behavior for zc_13065_um_item alias item
+{
+  use update;
+  use delete;
+
+  use association _head { with draft; }
+  use association _subit { create; with draft; }
+}
+
+define behavior for zc_13065_um_subit alias subit
+{
+  use update;
+  use delete;
+
+  use association _head { with draft; }
+  use association _item { with draft; }
+}
